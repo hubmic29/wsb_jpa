@@ -29,6 +29,7 @@ public class PatientEntity {
 	@Column(nullable = false)
 	private LocalDate dateOfBirth;
 
+	// relacja dwustronna
 	@OneToOne( cascade = CascadeType.ALL)
 	private AddressEntity address;
 

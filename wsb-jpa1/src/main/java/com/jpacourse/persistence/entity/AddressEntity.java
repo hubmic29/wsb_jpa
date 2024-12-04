@@ -18,10 +18,10 @@ public class AddressEntity {
 
 	private String postalCode;
 
-	@OneToOne(mappedBy = "address", cascade = CascadeType.ALL)
+	@OneToOne(mappedBy = "address", cascade = CascadeType.ALL) // relacja dwustronna
 	private DoctorEntity doctor;
 
-	@OneToOne(mappedBy = "address", cascade = CascadeType.ALL)
+	@OneToOne(mappedBy = "address", cascade = CascadeType.ALL) // relacja dwustronna
 	private PatientEntity patient;
 
 	public Long getId() {

@@ -18,6 +18,7 @@ public class MedicalTreatmentEntity {
 	@Enumerated(EnumType.STRING)
 	private TreatmentType type;
 
+	// relacja jednostronna od strony rodzica
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "VISIT_ID", nullable = false)
 	private VisitEntity visit;

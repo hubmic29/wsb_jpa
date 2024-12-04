@@ -29,7 +29,7 @@ public class DoctorEntity {
 	@Enumerated(EnumType.STRING)
 	private Specialization specialization;
 
-
+    // relacja dwustronna
 	@OneToOne
 	private AddressEntity address;
 

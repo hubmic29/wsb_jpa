@@ -18,11 +18,12 @@ public class VisitEntity {
 	@Column(nullable = false)
 	private LocalDateTime time;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+
+	@ManyToOne(fetch = FetchType.LAZY) // relacja jednostronna od strony rodzica
 	@JoinColumn(name = "PATIENT_ID", nullable = false)
 	private PatientEntity patient;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.LAZY) // relacja jednostronna od strony rodzica
 	@JoinColumn(name = "DOCTOR_ID", nullable = false)
 	private DoctorEntity doctor;
 
